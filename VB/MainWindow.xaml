@@ -1,0 +1,25 @@
+﻿<Window x:Class="DXGridSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        xmlns:local="clr-namespace:DXGridSample"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        Name="win"
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Window.Resources>
+        <Style TargetType="dxg:GridColumn">
+            <Setter Property="FilterPopupMode" Value="CheckedList"/>
+        </Style>
+    </Window.Resources>
+    <dxg:GridControl AutoGenerateColumns="AddNew" ItemsSource="{Binding Items}">
+        <dxg:GridControl.View>
+            <dxg:TableView>
+                <dxmvvm:Interaction.Behaviors>
+                    <local:FilteringBehavior/>
+                </dxmvvm:Interaction.Behaviors>
+            </dxg:TableView>
+        </dxg:GridControl.View>
+    </dxg:GridControl>
+</Window>
