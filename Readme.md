@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [FilteringBehavior.cs](./CS/FilteringBehavior.cs) (VB: [FilteringBehavior.vb](./VB/FilteringBehavior.vb))
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
+<!-- default file list end -->
 # How to enable an Excel-like filter dropdown
 
 
